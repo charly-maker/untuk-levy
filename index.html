@@ -2,12 +2,11 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Untuk Levy</title>
+  <title>Hai Levy 😊</title>
   <style>
     body {
-      background-color: #fff0f5;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -15,45 +14,75 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
-    .heart {
-      position: relative;
-      width: 150px;
-      height: 135px;
-      transform: rotate(-45deg);
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
+      text-align: center;
+      max-width: 400px;
     }
 
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      border: 4px solid red;
-      border-radius: 50%;
-    }
-
-    .heart::before {
-      top: -75px;
-      left: 0;
-    }
-
-    .heart::after {
-      top: 0;
-      left: 75px;
-    }
-
-    .text {
-      margin-top: 50px;
-      font-size: 26px;
+    h1 {
       color: #d63384;
-      font-weight: bold;
-      text-shadow: 1px 1px 2px #ff69b4;
-      transform: rotate(0deg);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .love {
+      font-size: 30px;
+      color: red;
+      margin-top: 20px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff1493;
     }
   </style>
 </head>
 <body>
-  <div class="heart"></div>
-  <div class="text">Levy cantik banget</div>
+  <div class="card">
+    <h1>Hai Levy 😄</h1>
+    <p>
+      Aku gaero lapo ben aku ndelok awmu iku seneng,<br>
+      rasane aku iki koyo yeepo yo ape salting tapi yo isin.<br><br>
+
+      ancen seh awmu ga gelem pacaran ro aku,<br>
+      tapi ben chatan aku rasane suweneng ngunu sampe ngguyu' dewe.<br><br>
+
+      nek ga kaboten,<br>
+      oleh ga awdewe luweh cedek neh 😊
+    </p>
+    <div class="love">❤️</div>
+
+    <!-- Button di bawah ini -->
+    <a href="https://wa.me/6285850780024" target="_blank">
+      <button class="btn">Balas dong 😳</button>
+    </a>
+  </div>
 </body>
 </html>
