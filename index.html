@@ -2,43 +2,20 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Hai Levy 😊</title>
+  <title>Pelukan dari charly</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      background: #fff0f5;
       font-family: 'Segoe UI', sans-serif;
-    }
-
-    .card {
-      background: white;
-      padding: 30px 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(255, 105, 180, 0.3);
       text-align: center;
-      max-width: 400px;
-    }
-
-    h1 {
-      color: #d63384;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #333;
-      line-height: 1.6;
+      padding: 60px;
     }
 
     .love {
-      font-size: 30px;
-      color: red;
-      margin-top: 20px;
-      animation: pulse 1s infinite;
+      font-size: 80px;
+      color: #ff4d88;
+      margin-bottom: 20px;
+      animation: pulse 1.5s infinite;
     }
 
     @keyframes pulse {
@@ -47,42 +24,63 @@
       100% { transform: scale(1); }
     }
 
-    .btn {
-      margin-top: 25px;
-      padding: 12px 20px;
-      font-size: 16px;
-      background-color: #ff69b4;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s ease;
+    .message {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 30px;
     }
 
-    .btn:hover {
-      background-color: #ff1493;
+    button {
+      background-color: #ff66a3;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff3385;
+    }
+
+    .hug-message {
+      font-size: 24px;
+      color: #cc0066;
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hai Levy 😄</h1>
-    <p>
-      Aku gaero lapo ben aku ndelok awmu iku seneng,<br>
-      rasane aku iki koyo yeepo yo ape salting tapi yo isin.<br><br>
 
-      ancen seh awmu ga gelem pacaran ro aku,<br>
-      tapi ben chatan aku rasane suweneng ngunu sampe ngguyu' dewe.<br><br>
+  <div class="love">🤗</div>
 
-      nek ga kaboten,<br>
-      oleh ga awdewe luweh cedek neh 😊
-    </p>
-    <div class="love">❤️</div>
-
-    <!-- Button di bawah ini -->
-    <a href="https://wa.me/6285850780024" target="_blank">
-      <button class="btn">Balas dong 😳</button>
-    </a>
+  <div class="message">
+    Lagi butuh pelukan?<br>
+    Tenang... charly selalu ada buat kamu 💗
   </div>
+
+  <button onclick="showHug()">Klik untuk pelukan virtual 🤍</button>
+
+  <div class="hug-message" id="hugMessage">
+    *Peluk erat dari charly...*<br>
+    Semangat terus ya! Kamu hebat banget 💖
+  </div>
+
+  <script>
+    function showHug() {
+      const hug = document.getElementById("hugMessage");
+      hug.style.display = "block";
+    }
+  </script>
+
 </body>
 </html>
